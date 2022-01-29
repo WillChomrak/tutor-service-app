@@ -1,0 +1,15 @@
+.book-form {
+    background-color: #64b6acff;
+    margin-top: 150px;
+    padding: 50px;
+}
+
+.booking-input,
+.react-datepicker-wrapper,
+.react-datepicker__input-container,
+.react-datepicker__input-container input {
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 3px 8px;
+}
