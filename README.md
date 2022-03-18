@@ -8,7 +8,8 @@ Completed:
 - Frontend HTTP requests; rendering results (incomplete on the "Our Tutors" page)
 - Backend logic for determining and passing ONLY available booking times
 
-To be added:
+To be completed:
+- CLEAN UP ALL CODE AND COMMENTS
 - Add subtle background to homepage
 - OAuth
 - Add fields to tutor schema (Education, file upload for profile img)
