@@ -1,0 +1,19 @@
+#tutors-top {
+    padding-top: 150px;
+    height: 40vh;
+    /* background-color: #fee65eff; */
+}
+
+#tutors-bottom {
+    padding: 50px;
+    height: 60vh;
+    /* background-color: #fee65eff; */
+}
+
+.tutors-col {
+    background-color: #0c50b4;
+    color: #f0f0f0;
+    /* #ffea84 */
+    padding: 30px;
+    border-radius: 10px;
+}
