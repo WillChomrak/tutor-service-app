@@ -6,19 +6,26 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 import Home from './components/Home';
 import Navigation from './components/Navigation';
-import SignUp from './components/SignUp';
+import CreateATutor from './components/CreateATutor';
+import Tutors from './components/Tutors';
+import StudentSignUp from './components/StudentSignUp';
 import BookLesson from './components/BookLesson';
+
+import canola from './img/canola.jpg';
 
 class App extends Component {
   render = () => {
     return (
       <Router>
 
-      <div className="App">
+      <div className="App" > 
+      {/* style={{backgroundImage: "url(" + canola + ")"}} */}
         <Navigation />
         <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/signup" element={<SignUp />} />
+        <Route path="/tutors" element={<Tutors />} />
+        <Route path="/createatutor" element={<CreateATutor />} />
+        <Route path="/studentsignup" element={<StudentSignUp />} />
         <Route path="/booklesson" element={<BookLesson />} />
         </Routes>
       </div>

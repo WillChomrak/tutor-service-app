@@ -1,5 +1,17 @@
-#home {
+#home-top {
     padding-top: 150px;
-    height: 100vh;
-    background-color: #fee65eff;
+    height: 40vh;
+    /* background-color: #fee65eff; */
+}
+
+#home-bottom {
+    padding: 50px;
+    height: 60vh;
+    /* background-color: #fee65eff; */
+}
+
+.home-col {
+    background-color: rgba(243, 243, 243, 0.651);
+    padding: 30px;
+    border-radius: 10px;
 }

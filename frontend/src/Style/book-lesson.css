@@ -1,15 +1,82 @@
 .book-form {
-    background-color: #64b6acff;
+    background-color: #ED6A5A;
+    /* #64b6acff; */
     margin-top: 150px;
     padding: 50px;
+    border-radius: 10px;
 }
 
+
 .booking-input,
-.react-datepicker-wrapper,
-.react-datepicker__input-container,
+.tutor-input,
+
 .react-datepicker__input-container input {
     outline: none;
     border: none;
     border-radius: 3px;
-    padding: 3px 8px;
+    /* padding: 3px 8px; */
+    margin: 15px 0;
+    padding: 10px;
+    
+    width: 100%;
+}
+
+.react-datepicker-wrapper {
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    /* padding: 3px 8px; */
+    padding: 10px;
+    
+    width: 100%;
+}
+
+.booking-input,
+.tutor-input,
+.react-datepicker__input-container input {
+    background-color: rgba(243, 243, 243, 0.651);
+}
+
+.react-datepicker__input-container input 
+
+.form-h2 {
+    margin: 30px;
+}
+
+.subjectCheck {
+    margin: 5px;
+    display: none;
+}
+
+.availCheck {
+    margin: 5px;
+    display: none;
+}
+
+.timeRadio {
+    margin: 5px;
+    display: none;
+}
+
+.availCheck:checked + label,
+.subjectCheck:checked + label,
+.timeRadio:checked + label {
+    background-color: rgb(254, 230, 94); 
+}
+
+.availInput > label,
+.subjectInput > label,
+.bookingInput > label {
+    border-radius: 5px;
+    background-color: rgba(243, 243, 243, 0.651);
+    /* #6e98c1; */
+    margin: 5px auto;
+    padding: 3px 15px;
+}
+
+.subjectInput > label{
+    width: 100px;
+}
+.availInput > label {
+    width: 200px;
 }

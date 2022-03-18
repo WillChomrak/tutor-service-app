@@ -5,10 +5,11 @@ import logo from '../logo192.png';
 // import tiktok from '../img/social-tiktok-white.png';
 
 const Navigation = () => {
-    const navItemStyle = {fontWeight: "bold", color: "#780116ff", fontSize: "18px"};
+    const navStyle = {backgroundColor: "rgb(237 106 90)", borderBottom: "1px solid rgb(185 109 100)"}
+    const navItemStyle = {fontWeight: "bold", color: "#474350", fontSize: "18px"};
     return (
         <div>
-            <Navbar collapseOnSelect expand="md" style={{backgroundColor: "#ffee8a"}} fixed="top">
+            <Navbar style={navStyle} collapseOnSelect expand="md" fixed="top">
                 <Container>
                 <Navbar.Brand className="justify-content-center" href="/" >
                     <Image src={logo} style={{maxHeight: "30px"}}></Image>
@@ -20,7 +21,9 @@ const Navigation = () => {
                     </Nav>
                     <Nav>
                     <Nav.Link href="/" style={navItemStyle}>Home</Nav.Link>
-                    <Nav.Link href="/signup" style={navItemStyle}>Sign up</Nav.Link>
+                    <Nav.Link href="/tutors" style={navItemStyle}>Our Tutors</Nav.Link>
+                    <Nav.Link href="/createatutor" style={navItemStyle}>Create a Tutor</Nav.Link>
+                    <Nav.Link href="/studentsignup" style={navItemStyle}>Student Sign Up</Nav.Link>
                     <Nav.Link href="/booklesson" style={navItemStyle}>Book a lesson</Nav.Link>
 
                     </Nav>

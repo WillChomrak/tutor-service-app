@@ -12,7 +12,9 @@ app.use(express.urlencoded({extended: false}));
 app.use(cors());
 app.use(express.static(path.join(__dirname, "public")));
 app.use('/api/users', require('./routes/api/users'));
-app.use('/api/appointments', require('./routes/api/appointments'));
+app.use('/api/bookings', require('./routes/api/bookings'));
+app.use('/api/tutors', require('./routes/api/tutors'));
+app.use('/api/students', require('./routes/api/students'));
 
 
 

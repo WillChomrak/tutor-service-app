@@ -1,5 +1,5 @@
 const { MongoClient } = require('mongodb');
-const uri = "<your-uri-here>"
+const uri = "mongodb+srv://node-admin:3azNav8TxU9OJTXJ@cluster0.3wgau.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 const client = new MongoClient(uri);
 
 let dbConnection;
