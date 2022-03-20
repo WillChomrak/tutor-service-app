@@ -18,6 +18,7 @@ To be completed:
 - Style Booking form
 - Review of all style (change tutor div colour)
 - Create and add logo
+- Add spinner for when requests are being processed and success/error message when request has been processed
 
 Later stage planned additions:
 - Create schema and routes for subjects
