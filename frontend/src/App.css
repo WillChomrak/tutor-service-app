@@ -1,7 +1,9 @@
 .App {
   text-align: center;
   /* background-image: #fee65eff; */
-  background-image: linear-gradient(#7a7eff, #517fff);
+  background-image:  /*url(./img/test-background2.png), */ linear-gradient(#7a7eff, #517fff);
+  background-repeat: no-repeat;
+  /* background-image: linear-gradient(#7a7eff, #517fff); */
   min-height: 100vh;
 }
 

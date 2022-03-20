@@ -81,35 +81,51 @@ const BookLesson = () => {
   return (
     <Container>
         <Row>
-            <Col md={{ span: 6, offset: 3 }}>
+            <Col md={{ span: 8, offset: 2 }}>
 
                 <form onSubmit={onFormSubmit} className="book-form">
-                    <label for="date">Date:</label>
-                    <DatePicker id="datepicker" name="datepicker" selected={date} dateFormat="MM/dd/yyyy" onChange={_date => onDateChoice(_date)} />
-                    {time ? <span>You selected: {time}</span> : <span>no time selected</span>}
+                    <Row>
+                        <Col lg={{span: 8, offset: 2}}>
+                            <label for="date">Date:</label>
+                            <DatePicker id="datepicker" name="datepicker" selected={date} dateFormat="MM/dd/yyyy" onChange={_date => onDateChoice(_date)} />
+                            {time ? <span>You selected: {time}</span> : <span>no time selected</span>}
+                            <br />
+                            {tutors ? <span><label for="time">Time</label><br /><BookingTimes data={tutors}  onTimeChange={onTimeChange} /></span> : <span>nothing</span>}
+                        </Col>
+                    </Row>
                     <br />
-                    {tutors ? <span><label for="time">Time</label><br /><BookingTimes data={tutors}  onTimeChange={onTimeChange} /></span> : <span>nothing</span>}
-                    <br />
-                    <input placeholder="First name" className="booking-input" type="text" id="fname" name="fname" required></input><br />
-                    <input className="booking-input" placeholder="Last name" type="text" id="lname" name="lname" required></input><br />                  
-                    <input className="booking-input" placeholder="Subject" type="text" id="subject" name="subject" required></input><br /><br />
+                    
+                    {/* <input className="booking-input" placeholder="Last name" type="text" id="lname" name="lname" required></input><br />                   */}
+                    {/* <input className="booking-input" placeholder="Subject" type="text" id="subject" name="subject" required></input><br /><br /> */}
+                    {/* { time ? <Button style={{backgroundColor: "#a850b3", border: "0px", fontSize: "1.3em", padding: "5px 10px 10px 10px"}} type="submit">Book</Button> : <p>Please select a date, time, and fill all fields</p>} */}
+                    <Row>
+                        <Col lg={{span: 4, offset: 2}}>
+                            <input placeholder="First name" className="booking-input" type="text" id="fname" name="fname" required></input><br />
+                        </Col>
+                        <Col lg={4}>
+                            <input className="booking-input" placeholder="Last name" type="text" id="lname" name="lname" required></input><br />                  
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col lg={{span: 8, offset: 2}}>
+                            <input className="booking-input" placeholder="Subject" type="text" id="subject" name="subject" required></input><br /><br />
+                        </Col>
+                    </Row>
                     { time ? <Button style={{backgroundColor: "#a850b3", border: "0px", fontSize: "1.3em", padding: "5px 10px 10px 10px"}} type="submit">Book</Button> : <p>Please select a date, time, and fill all fields</p>}
-
                 </form>
             </Col>
+            
         </Row>
-        <Row>
+        {/* <Row>
             <Col md={{ span: 6, offset: 3 }}>
                <div>
-                {/* {tutors ? tutors.map(tutor => <p>{tutor.availability}  </p>) : <p>nothin</p>}   */}
                 </div> 
                 <div>
-                    {/* <button onClick={() => console.log(new Date(bookingsForSelectedDate).getDate())}>get filtered bookings</button> */}
                 {tutors ? <p>some bookings</p> : <p>no bookings yet</p>}  
 
                 </div>
             </Col>
-        </Row>
+        </Row> */}
 
     </Container>
   );
